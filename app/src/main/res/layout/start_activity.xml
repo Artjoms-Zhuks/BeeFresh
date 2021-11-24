@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/startContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/start_back"
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="450dp"/>
+
+    <Button
+        android:id="@+id/clientButton"
+        style="@style/buttonStyle"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:text="Клиент"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/masterButton"
+        style="@style/buttonStyleWhite"
+        app:layout_constraintTop_toBottomOf="@id/clientButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:text="Мастер"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
